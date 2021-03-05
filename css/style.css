@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fcf7ef;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "hd"
+    "wl"
+    "pt"
+    "qt"
+    "ab"
+    "ft";
+}
+
+/*header*/
+
+.head {
+    height: 100vh;
+    background-image:url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.topnav {
+    opacity: 0.7;
+    background-color: #222;
+    height: 10vh;
+    
+}
+
+.navcont {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+ul li {
+    flex: 1 200px;
+}
+
+li a p {
+    color: #fcf5e5;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 3em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+h1.title {
+    font-family: 'Leckerli One', cursive;;
+}
