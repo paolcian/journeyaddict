@@ -30,13 +30,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .topnav {
     opacity: 0.7;
     background-color: #222;
     height: 10vh;
-    
 }
 
 .navcont {
@@ -53,7 +53,7 @@ li a p {
     color: #fcf5e5;
     font-size: 1.5em;
     text-align: center;
-    line-height: 3em;
+    line-height: 10vh;;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -61,8 +61,67 @@ a {
     text-decoration: none;
 }
 
-
+.hello{
+    text-align: center;
+}
 
 h1.title {
-    font-family: 'Leckerli One', cursive;;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 25vh;
+    color: #fcf5e5;
+    font-size: 2.3em;
 }
+
+.btn {
+    border: 2px solid #222;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+.btn a {
+    color: #fcf5e5;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+}
+
+/*medium screen*/
+
+@media (min-width: 600px) and (max-width:900px) {
+   .navcont{
+       justify-content: flex-end;
+   } 
+
+   ul li {
+       max-width: 100px;
+   }
+  }
+
+  /*large screen*/
+
+  @media (min-width:901px) {
+    .navcont{
+        justify-content: flex-end;
+
+    } 
+
+    ul li {
+        max-width: 100px;
+        margin: 0 10px;
+
+    }
+
+    h1.title {
+        font-size: 3.3em;
+    }
+
+    .btn a {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 7px 20px;
+    }
+  }
