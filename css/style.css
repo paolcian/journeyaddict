@@ -213,7 +213,7 @@ h1.title {
 
  }
 
- .nested-grid h2{
+ .nested-grid h1{
     grid-column: 1;
     grid-row: 1;
     font-family: 'Homemade Apple', cursive;
@@ -235,6 +235,7 @@ h1.title {
 
  }
 
+
  #two{
     grid-column: 1;
     grid-row: 3;
@@ -252,3 +253,82 @@ h1.title {
     grid-row: 5;
     background-image: url(../images/desert.jpg);
  }
+
+
+ /*section quote*/
+
+ .quote-text {
+    color: #fcf5e5;
+    text-align: center;
+    height: 100vh;
+    background-image:url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 10vh;
+ }
+
+ .quote-text blockquote {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2.3em;
+    margin: 0 5vh;
+ }
+
+ .quote-text figcaption {
+    font-family: 'Quicksand', sans-serif;
+    margin: 5vh 5vh 0 5vh;
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5vh;
+ }
+
+   /*medium screen*/
+
+@media (min-width: 600px) and (max-width:900px) {
+    .quote-text blockquote {
+        font-size: 2.5em;
+      }
+
+      .quote-text figcaption {
+          margin: 0 10vh;
+      }
+
+}
+
+ /*large screen*/
+
+ @media (min-width:901px) {
+
+    .quote-text blockquote {
+        font-size: 3.3em;
+        margin: 0 10vh;
+      }
+
+    .quote-text figcaption {
+          margin: 0 15vh;
+          font-size: 1.5em;
+      }
+ }
+
+ /*section about*/
+
+ .about {
+    display: flex;
+    flex-direction: row;
+
+
+ }
+
+ .info
+
+
+ .fb{
+     border: 1px solid red;
+     height: 10vh;
+     width: 10vh;
+ }
+
+ /*footer*/
+
