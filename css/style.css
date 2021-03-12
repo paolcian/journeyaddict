@@ -1,3 +1,6 @@
+@import "compass/css3";
+@import "breakpoint";
+
 * {
     margin: 0;
     padding: 0;
@@ -159,7 +162,7 @@ h1.title {
   }
 
   .welc h1 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'La Belle Aurore', cursive;
     font-size: 2.3em;
   }
 
@@ -188,7 +191,7 @@ h1.title {
 
  @media (min-width:901px) {
      .welc {
-         margin: 5vh 10vh;
+         margin: 5vh 10vh 15vh;
      }
     .welc h1 {
         font-size: 3.3em;
@@ -209,14 +212,14 @@ h1.title {
     grid-gap:5vh;
     grid-auto-rows: minmax(100px, auto);
     text-align: center;
-    margin: 5vh;
+    margin: 5vh 0 15vh;
 
  }
 
- .nested-grid h1{
+ .posts-h{
     grid-column: 1;
     grid-row: 1;
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: #977656; 
     font-size: 2.3em;
  }
@@ -231,28 +234,254 @@ h1.title {
  #one{
     grid-column: 1;
     grid-row: 2;
-    background-image: url(../images/trees.jpg);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    cursor: pointer;
+    color: #977656;
 
  }
 
+ 
+
+ .bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+ }
+
+ #one .bg {
+    background-image: url(../images/trees.jpg);
+ }
+
+ .post-h {
+     overflow: hidden;
+     flex: 1;
+     position: relative;
+     transition: 0.3s height;
+
+ }
+
+ #one:hover {
+     height: 60vh;
+ }
+
+ #one:hover .p-body {
+     height: 40vh;
+ }
+
+ .date{
+     z-index: 1;
+     color: white;
+     position: absolute;
+     background-color: rgba(0, 0, 0, 0.6);
+     padding: 0 10px;
+     height: 4vh;
+     font-size: 0.8em;
+     line-height: 4vh;
+     font-weight: bold;
+     right: 5px;
+     top: 5px;
+     text-transform: uppercase;
+ }
+
+ 
+ .label{
+    z-index: 1;
+    color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 10px;
+    height: 4vh;
+    font-size: 0.8em;
+    line-height: 4vh;
+    font-weight: bold;
+    left: 5px;
+    bottom: 5px;
+    text-transform: uppercase;
+    
+}
+
+.p-body{
+    flex: 1.1;
+}
+
+.p-body h1 {
+    font-family:  'Quicksand', sans-serif;
+    font-size: 1.5em;
+    margin-top: 2vh;
+    color: #4a2b1d;
+}
+
+.p-body a {
+    font-weight: bold;
+    text-decoration: none;
+    color:#4a2b1d;
+}
+
+.p-body p {
+    font-size: 1em;
+    margin: 2vh;
+}
+
+.post-footer {
+    color: #4a2b1d;
+    flex:0.1;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
 
  #two{
     grid-column: 1;
     grid-row: 3;
-    background-image: url(../images/camera.jpg);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    cursor: pointer;
+    color: #977656;
  }
+
+ #two .bg {
+    background-image: url(../images/camera.jpg);
+
+ }
+
+ #two:hover {
+    height: 60vh;
+}
+
+#two:hover .p-body {
+    height: 40vh;
+}
 
  #three{
     grid-column: 1;
     grid-row: 4;
-    background-image: url(../images/sandstorm.jpg);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    cursor: pointer;
+    color: #977656;
  }
+
+ #three .bg {
+    background-image: url(../images/sandstorm.jpg);
+
+ }
+
+ #three:hover {
+    height: 60vh;
+}
+
+#three:hover .p-body {
+    height: 40vh;
+}
 
  #four{
     grid-column: 1;
     grid-row: 5;
-    background-image: url(../images/desert.jpg);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    cursor: pointer;
+    color: #977656;
  }
+
+ #four .bg {
+    background-image: url(../images/desert.jpg);
+
+ }
+
+ #four:hover {
+    height: 60vh;
+}
+
+#four:hover .p-body {
+    height: 40vh;
+}
+
+/*medium screen*/
+
+@media (min-width: 600px) and (max-width:900px){
+    .nested-grid {
+        grid-template-columns: 2;
+    }
+
+    .posts-h{
+        grid-column: 1 / span 2;
+    }
+
+    
+    #two{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #three{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #four{
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+}
+
+ /*large screen*/
+
+ @media (min-width:901px){
+    .nested-grid {
+        grid-template-columns: 4;
+        margin-bottom: 5vh;
+    }
+
+    .posts-h{
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+
+    #one {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    
+    #two{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #three{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #four{
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+ }
+
 
 
  /*section quote*/
@@ -266,13 +495,15 @@ h1.title {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-top: 10vh;
+    padding-top: 20vh;
+    margin-top: 10vh;
  }
 
  .quote-text blockquote {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'La Belle Aurore', cursive;
     font-size: 2.3em;
-    margin: 0 5vh;
+    margin: 5vh;
+
  }
 
  .quote-text figcaption {
@@ -345,7 +576,7 @@ h1.title {
  }
 
  .info h3 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'La Belle Aurore', cursive;
     font-size:1.5em;
  }
 
@@ -378,7 +609,7 @@ h1.title {
 }
 
     .socialMe h3 {
-        font-family: 'Homemade Apple', cursive;
+        font-family: 'La Belle Aurore', cursive;
         font-size:1.5em;
      }
 
@@ -470,11 +701,11 @@ h1.title {
     .info {
         grid-column: 1;
         grid-row: 1;
-        margin: 5vh 20vh;
+        margin: 5vh 20vh 0;
     }
 
     .info h3 {
-        font-size: 3em;
+        font-size: 3.3em;
     }
 
     .btn2 {
@@ -492,10 +723,11 @@ h1.title {
     .socialMe {
         grid-column: 1;
         grid-row: 2;
+        margin-top: 0;
     }
 
     .socialMe h3 {
-        font-size: 3em;
+        font-size: 3.3em;
     }
 
     .socials {
