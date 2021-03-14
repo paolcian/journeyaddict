@@ -256,10 +256,12 @@ form {
     }
       .hello-about {
           margin: 5vh 5vh 15vh;
+          text-align: left;
       }
 
      .hello-about h1 {
          font-size: 3.3em;
+         margin-left: 10vh;
        }
  
        .hello-about p {
