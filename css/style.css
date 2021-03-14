@@ -25,6 +25,7 @@ body{
 /*section header*/
 
 .head {
+    grid-area: hd;
     height: 100vh;
     background-image:url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -152,7 +153,7 @@ h1.title {
   /*section welcome*/
 
   .welc {
-   
+    grid-area: wl;
    color: #977656;
    text-align: center;
    margin: 5vh;
@@ -204,6 +205,7 @@ h1.title {
  /*section posts*/
 
  .nested-grid {
+    grid-area: pt;
     display: grid;
     grid-template-columns: 1;
     grid-gap: 5vh;
@@ -419,9 +421,7 @@ h1.title {
         margin: 1vh 4vh;
     }
 
-    .p-body a {
-        margin: 1vh;
-    }
+   
 
     #one {
         grid-column: 1;
@@ -451,6 +451,7 @@ h1.title {
  /*section quote*/
 
  .quote-text {
+    grid-area: qt;
     color: #fcf5e5;
     text-align: center;
     height: 100vh;
@@ -510,6 +511,7 @@ h1.title {
  /*section about*/
 
  .about {
+    grid-area: ab;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: repeat(4, auto);
@@ -713,7 +715,7 @@ h1.title {
  /*footer*/
 
  .foot {
- 
+    grid-area: ft;
     height: 10vh;
     background-color:  #4a2b1d;
     opacity: 0.9;
