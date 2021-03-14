@@ -12,7 +12,7 @@ body{
 .container-about {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: 
     "hd"
     "wl"
