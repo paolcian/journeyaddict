@@ -418,10 +418,8 @@ h1.title {
     }
 
     .p-body p {
-        margin: 1vh 4vh;
+        margin: 2vh 4vh;
     }
-
-   
 
     #one {
         grid-column: 1;

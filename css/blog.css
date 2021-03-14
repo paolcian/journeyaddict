@@ -161,10 +161,16 @@ h1.title {
    @media (min-width:901px) {
     .welc-post h1 {
         font-size: 3em;
+        text-align: left;
+        margin-left: 5vh;
     }
 
     .welc-post p {
         text-align: left;
+    }
+
+    .date { 
+        font-size: 0.8em;
     }
 
    }
