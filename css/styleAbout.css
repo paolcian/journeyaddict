@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #fcf7ef;
     font-size: 16px;
 }
@@ -13,10 +13,10 @@ body{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "hd"
-    "wl"
-    "ft";
+    grid-template-areas:
+        "hd"
+        "wl"
+        "ft";
 }
 
 
@@ -25,7 +25,7 @@ body{
 .head-about {
     grid-area: hd;
     height: 100vh;
-    background-image:url(../images/cover.jpg);
+    background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -49,14 +49,15 @@ ul li {
 }
 
 li a p:hover {
-    color:#d89e54;
+    color: #d89e54;
 }
 
 li a p {
     color: #fcf5e5;
     font-size: 1.5em;
     text-align: center;
-    line-height: 10vh;;
+    line-height: 10vh;
+    ;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -64,7 +65,7 @@ a {
     text-decoration: none;
 }
 
-.hello{
+.hello {
     text-align: center;
     margin: 0 5vh 5vh 5vh;
 }
@@ -78,40 +79,39 @@ h1.title {
 
 .animate__animated.animate__zoomIn {
     --animate-duration: 2s;
-  }
+}
 
 
 
 /*medium screen*/
 
 @media (min-width: 600px) and (max-width:900px) {
-   .navcont-about{
-       justify-content: flex-end;
-   } 
-
-   ul li {
-       max-width: 100px;
-       margin: 0 10px;
-   }
-
-   h1.title {
-       font-size: 2.5em;
-   }
-
-  }
-
-  /*large screen*/
-
-  @media (min-width:901px) {
-    .navcont-about{
+    .navcont-about {
         justify-content: flex-end;
-
-    } 
+    }
 
     ul li {
         max-width: 100px;
         margin: 0 10px;
+    }
 
+    h1.title {
+        font-size: 2.5em;
+    }
+
+}
+
+
+/*large screen*/
+
+@media (min-width:901px) {
+    .navcont-about {
+        justify-content: flex-end;
+    }
+
+    ul li {
+        max-width: 100px;
+        margin: 0 10px;
     }
 
     h1.title {
@@ -119,76 +119,79 @@ h1.title {
     }
 
 
-  }
+}
 
-  /* section about*/
+
+/* section about*/
 
 .hello-about {
-   
+
     color: #977656;
     text-align: center;
     margin: 5vh;
-   }
- 
-   .hello-about h1 {
-     font-family: 'La Belle Aurore', cursive;
-     font-size: 2.3em;
-     margin-top: 5vh;
-   }
- 
-   .hello-about p {
-       font-family: 'Quicksand', sans-serif;
-       line-height: 1.5em;
-       margin: 5vh 5vh 0;
-   }
+}
 
-       .socials-about{
-        margin-bottom: 5vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+.hello-about h1 {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 2.3em;
+    margin-top: 5vh;
+}
 
-     .fb{
-        flex: 1;
-        max-width: 5vh;
-    
-     }
-    
-     .fb a i{
-        text-decoration: none;
-        font-size: 1.6em;
-        color:  #4a2b1d;
-        
-     }
-    
-     .insta {
-        flex: 1;
-        max-width: 5vh;
-     }
-    
-     .insta a i {
-        font-size: 1.6em;
-        color: #4a2b1d;
-     }
-    
-     /*subscribe*/
+.hello-about p {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5em;
+    margin: 5vh 5vh 0;
+}
 
+.socials-about {
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fb {
+    flex: 1;
+    max-width: 5vh;
+}
+
+.fb a i {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #4a2b1d;
+}
+
+.insta {
+    flex: 1;
+    max-width: 5vh;
+}
+
+.insta a i {
+    font-size: 1.6em;
+    color: #4a2b1d;
+}
+
+
+/*subscribe*/
 
 form {
     border: 4px solid #fcf5e5;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
-  }
-  
-  .container {
+}
+
+.container {
     padding: 5vh;
     background-color: white;
     color: #977656;
-  }
+}
 
-  
-  input[type=text], input[type=submit] {
+.container h2 {
+    text-decoration: underline;
+}
+
+input[type=text],
+input[type=submit] {
     width: 100%;
     padding: 2vh;
     margin: 2vh 0;
@@ -196,102 +199,95 @@ form {
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
-  }
-  
-  input[type=checkbox] {
-    margin-top: 3vh;
-  }
+}
 
-  input[type=submit] {
+input[type=checkbox] {
+    margin-top: 3vh;
+}
+
+input[type=submit] {
     background-color: transparent;
     color: #4a2b1d;
     border: 1px solid #4a2b1d;
     font-family: 'Quicksand', sans-serif;
     font-size: 1em;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #4a2b1d;
     color: #fcf5e5;
-    
-
-  }
-   
- 
-   /*medium screen*/
- 
- @media (min-width: 600px) and (max-width:900px) {
-     .hello-about h1 {
-         font-size: 2.5em;
-       }
- 
-       .hello-about p {
-           margin: 5vh 10vh 0 10vh;
-    
-       }
-
-       form{ 
-           max-width: 70%;
-           margin: 0 auto 5vh;
-       }
- 
- }
- 
-  /*large screen*/
- 
-  @media (min-width:901px) {
+}
 
 
-    .welcome-about{
+/*medium screen*/
+
+@media (min-width: 600px) and (max-width:900px) {
+    .hello-about h1 {
+        font-size: 2.5em;
+    }
+
+    .hello-about p {
+        margin: 5vh 10vh 0 10vh;
+    }
+
+    form {
+        max-width: 70%;
+        margin: 0 auto 5vh;
+    }
+
+}
+
+
+/*large screen*/
+
+@media (min-width:901px) {
+    .welcome-about {
         display: flex;
         flex-direction: row;
-
     }
 
     .info-socials {
         flex: 2;
         display: flex;
         flex-direction: column;
-
     }
-      .hello-about {
-          margin: 5vh 5vh 15vh;
-          text-align: left;
-      }
 
-     .hello-about h1 {
-         font-size: 3.3em;
-         margin-left: 10vh;
-       }
- 
-       .hello-about p {
-           margin: 5vh 10vh 0 10vh;
-           line-height: 1.8em;
+    .hello-about {
+        margin: 5vh 5vh 15vh;
+        text-align: left;
+    }
 
-       }
+    .hello-about h1 {
+        font-size: 3.3em;
+        margin-left: 10vh;
+    }
 
-       .socials-about {
-           margin-top: 2vh;
-       }
+    .hello-about p {
+        margin: 5vh 10vh 0 10vh;
+        line-height: 1.8em;
+    }
+
+    .socials-about {
+        margin-top: 2vh;
+    }
+
+    .subscribe {
+        flex: 1;
+        max-width: 80%;
+        margin: 30vh 5vh 0 0;
+    }
+}
 
 
-       .subscribe {
-           flex: 1;
-           max-width: 80%;
-           margin: 30vh 5vh 0 0;
-       }
-  }
+/*footer*/
 
-
-   /*footer*/
-
- .foot-about {
+.foot-about {
     grid-area: ft;
     height: 10vh;
-    background-color:  #4a2b1d;
+    background-color: #4a2b1d;
     opacity: 0.9;
-    font-family:'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     text-align: center;
     line-height: 10vh;
     color: #fcf5e5;
- }
+}
