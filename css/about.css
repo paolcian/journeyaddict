@@ -1,0 +1,205 @@
+/*section about*/
+
+.about {
+    grid-area: ab;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(4, auto);
+    margin: 5vh;
+
+}
+
+.photo {
+    grid-column: 1;
+    grid-row: 1;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100%;
+    margin: 0 auto;
+    background-image: url(../images/woman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.info {
+    color: #977656;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 5vh;
+
+}
+
+.info h3 {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 1.5em;
+}
+
+.info p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn2 {
+    border: 2px solid #4a2b1d;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 5vh;
+    color: #4a2b1d;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.socialMe {
+    grid-column: 1;
+    grid-row: 3;
+    color: #977656;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.socialMe h3 {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 1.5em;
+}
+
+.socials {
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fb {
+    flex: 1;
+    max-width: 5vh;
+
+}
+
+.fb a i {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #4a2b1d;
+
+}
+
+.insta {
+    flex: 1;
+    max-width: 5vh;
+}
+
+.insta a i {
+    font-size: 1.6em;
+    color: #4a2b1d;
+}
+
+
+/*medium screen*/
+
+@media (min-width: 600px) and (max-width:900px) {
+    .about {
+        grid-template-columns: 2;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .info {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 5vh 10vh;
+    }
+
+    .info h3 {
+        font-size: 2em;
+    }
+
+    .btn2 {
+        font-size: 1em;
+    }
+
+    .photo {
+        grid-column: 2;
+        grid-row: 1;
+        height: 30vh;
+        width: 30vh;
+        margin: 5vh 10vh;
+    }
+
+    .socialMe {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .socialMe h3 {
+        font-size: 2em;
+    }
+
+    .socials {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+
+}
+
+
+/*large screen*/
+
+@media (min-width:901px) {
+    .about {
+        grid-template-columns: 2;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .info {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 5vh 20vh 0vh;
+    }
+
+    .info h3 {
+        font-size: 3.3em;
+    }
+
+    .btn2 {
+        font-size: 1.5em;
+    }
+
+    .photo {
+        grid-column: 2;
+        grid-row: 1;
+        height: 40vh;
+        width: 40vh;
+        margin: 5vh 10vh 0;
+    }
+
+    .socialMe {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 0;
+    }
+
+    .socialMe h3 {
+        font-size: 3.3em;
+    }
+
+    .socials {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .fb a i {
+        font-size: 2em;
+    }
+
+    .insta a i {
+        font-size: 2em;
+    }
+
+
+}
+

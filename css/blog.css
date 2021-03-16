@@ -152,6 +152,23 @@ h1.title {
     margin: 5vh 5vh 0;
 }
 
+img {
+    width: 40vh;
+    margin-top: 5vh;
+}
+
+figcaption {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*medium screen*/
+
+@media (min-width: 600px) and (max-width:900px) {
+    img {
+        width: 90vh;
+    }
+}
+
 
 /*large screen*/
 
@@ -168,6 +185,10 @@ h1.title {
 
     .date {
         font-size: 0.8em;
+    }
+
+    img {
+        width: 70vh;
     }
 }
 

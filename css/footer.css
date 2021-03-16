@@ -1,0 +1,13 @@
+
+/*footer*/
+
+.foot {
+    grid-area: ft;
+    height: 10vh;
+    background-color: #4a2b1d;
+    opacity: 0.9;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    line-height: 10vh;
+    color: #fcf5e5;
+}
