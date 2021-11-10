@@ -35,17 +35,25 @@ body {
 
 /*section header*/
 
-@supports (-webkit-touch-callout: none){
+
 .head-post {
     grid-area: hd;
     height: 100vh;
-    background: url(../images/cover.jpg) center top no-repeat scroll;
+    background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    }
+
+
+@supports (-webkit-touch-callout: none) {
+#head-post {
+    background: url('../images/cover.jpg') center top no-repeat scroll;
     background-size: auto 100vh;
-    }}
+}    
+}
+
 
 .topnav-post {
     opacity: 0.7;
