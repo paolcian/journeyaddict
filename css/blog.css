@@ -223,12 +223,7 @@ figcaption {
     background-position: center;
 }
 
-@supports (-webkit-touch-callout: none) {
-.photo-post {
-    background: url('../images/woman.jpg') center top no-repeat scroll;
-    background-size: auto 100vh;
-}    
-}
+
 .info-post {
     flex: 2;
     color: #977656;
