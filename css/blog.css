@@ -49,11 +49,10 @@ body {
 
 @supports (-webkit-touch-callout: none) {
 .head-post {
-    background: url('../images/cover.jpg') center top no-repeat scroll;
+    background: url(../images/cover.jpg) center top no-repeat scroll;
     background-size: auto 100vh;
 }    
 }
-
 
 .topnav-post {
     opacity: 0.7;
