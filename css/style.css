@@ -345,7 +345,7 @@ body {
 }
 
 @supports (-webkit-touch-callout: none) {
-.head {
+.quote-text {
     background: url(../images/cover.jpg) center top no-repeat scroll;
     background-size: auto 100vh;
 }    
