@@ -339,9 +339,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     padding-top: 20vh;
     margin-top: 10vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+.head {
+    background: url(../images/cover.jpg) center top no-repeat scroll;
+    background-size: auto 100vh;
+}    
 }
 
 .quote-text blockquote {
