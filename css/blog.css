@@ -48,7 +48,7 @@ body {
 
 
 @supports (-webkit-touch-callout: none) {
-#head-post {
+.head-post {
     background: url('../images/cover.jpg') center top no-repeat scroll;
     background-size: auto 100vh;
 }    
