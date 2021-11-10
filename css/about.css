@@ -8,7 +8,7 @@
     margin: 5vh;
 
 }
-@supports (-webkit-touch-callout: none) {
+
 .photo {
     grid-column: 1;
     grid-row: 1;
@@ -16,12 +16,12 @@
     width: 20vh;
     border-radius: 100%;
     margin: 0 auto;
-    background: url(../images/woman.jpg) center top no-repeat scroll;
+    background-image: url(../images/woman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-size: auto 100vh;
-    }}
+    }
 
 .info {
     color: #977656;
